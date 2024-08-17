@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country and City Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #74ebd5;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #57c4c4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Select Your Country and City</h2>
+
+        <form id="countryForm">
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" onchange="updateCities()">
+                <option value="">--Select Country--</option>
+                <option value="Iran">Iran</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+
+            </select>
+        </form>
+
+        <form id="cityForm">
+            <label for="city">Select City:</label>
+            <select id="city" name="city">
+                <option value="">--Select City--</option>
+
+            </select>
+        </form>
+
+        <button type="submit" form="cityForm">Submit</button>
+    </div>
+<script src="ticketSale.js"></script>
+</body>
+</html>
