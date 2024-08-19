@@ -13,9 +13,3 @@ A simple and interactive web form that allows users to select a country from a d
 - CSS
 - JavaScript
 
-**How to Use:**
-1. Clone the repository.
-2. Open the `index.html` file in your browser.
-3. Select a country to see its cities appear in the dropdown menu.
-
-Feel free to contribute by adding more countries, improving the design, or enhancing functionality!
